@@ -1,5 +1,9 @@
-FROM openjdk:7
-COPY . /usr/src/myapp
+FROM openjdk:{{version}}
+
 WORKDIR /usr/src/myapp
-RUN javac {{entry}}}
-CMD ["java", "{{entry}}"]
+
+COPY . .
+
+RUN javac main.java
+
+CMD ["java", "main"]
