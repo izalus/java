@@ -1,0 +1,6 @@
+{
+    "entry": "./main.java",
+    "inputs": {
+        "version": "string"
+    }
+}
